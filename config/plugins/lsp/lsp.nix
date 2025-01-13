@@ -10,14 +10,15 @@
     helm = {
       enable = true;
     };
-    volar = {
-      enable = true;
-      tslsIntegration = true;
-    };
+
     lsp = {
       enable = true;
       inlayHints = true;
       servers = {
+        volar = {
+          enable = true;
+          tslsIntegration = true;
+        };
         html = {
           enable = true;
         };
