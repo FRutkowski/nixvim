@@ -10,6 +10,10 @@
     helm = {
       enable = true;
     };
+    volar = {
+      enable = true;
+      tslsIntegration = true;
+    };
     lsp = {
       enable = true;
       inlayHints = true;
