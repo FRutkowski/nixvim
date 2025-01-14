@@ -6,20 +6,12 @@
       indent.enable = true;
       highlight.enable = true;
     };
-    folding = false;
-    nixvimInjections = true;
+    # folding = false;
+    # nixvimInjections = true;
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
-    luaConfig = ''
-      require('nvim-treesitter.configs').setup {
-        context_commentstring = {
-            enable = true;
-            enable_autocmd = false;
-          };
-        }
-    '';
   };
 
-  # plugins.treesitter-context.enable = true;
+  plugins.treesitter-context.enable = true;
   plugins.treesitter-textobjects = {
     enable = false;
     select = {
