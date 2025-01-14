@@ -18,10 +18,16 @@
         volar = {
           enable = true;
           extraOptions.init_options.vue.hybridMode = false;
+          filetypes = [
+            "javascript"
+            "typescript"
+            "vue"
+          ];
           # tslsIntegration = true;
         };
         html = {
           enable = true;
+          filetypes = [ "html" ];
         };
         lua_ls = {
           enable = true;
