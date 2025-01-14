@@ -89,13 +89,16 @@
             stop_after_first = true;
           };
           javascript = {
-            __unkeyed-1 = "prettierd";
-            __unkeyed-2 = "prettier";
+            __unkeyed-1 = "biome";
+            __unkeyed-2 = "prettierd";
+            __unkeyed-3 = "prettier";
             stop_after_first = true;
           };
           typescript = {
-            __unkeyed-1 = "prettierd";
-            __unkeyed-2 = "prettier";
+
+            __unkeyed-1 = "biome";
+            __unkeyed-2 = "prettierd";
+            __unkeyed-3 = "prettier";
             stop_after_first = true;
           };
           python = [
