@@ -9,10 +9,10 @@
     folding = false;
     nixvimInjections = true;
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
-    # context_commentstring = {
-    #   enable = true;
-    #   enable_autocmd = false;
-    # };
+    context_commentstring = {
+      enable = true;
+      enable_autocmd = false;
+    };
   };
 
   plugins.treesitter-context.enable = true;
