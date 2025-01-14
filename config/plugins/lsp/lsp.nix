@@ -17,7 +17,8 @@
       servers = {
         volar = {
           enable = true;
-          tslsIntegration = true;
+          extraOptions.init_options.vue.hybridMode = false;
+          # tslsIntegration = true;
         };
         html = {
           enable = true;
@@ -28,9 +29,9 @@
         nil_ls = {
           enable = true;
         };
-        ts_ls = {
-          enable = true;
-        };
+        # ts_ls = {
+        #   enable = true;
+        # };
         marksman = {
           enable = true;
         };
