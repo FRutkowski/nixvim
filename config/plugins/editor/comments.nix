@@ -1,8 +1,13 @@
 {
   plugins = {
-    # comment = {
-    #   enable = true;
-    #   lazyLoad.enable = true;
-    # };
+    comment = {
+      enable = true;
+      lazyLoad.enable = false;
+      settings = {
+        toggler = {
+          block = "<C-/>";
+        };
+      };
+    };
   };
 }

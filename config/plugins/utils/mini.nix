@@ -1,6 +1,6 @@
 {
   plugins.mini = {
-    enable = false;
+    enable = true;
 
     modules = {
       indentscope = {
