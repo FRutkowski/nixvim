@@ -9,7 +9,7 @@
     folding = false;
     nixvimInjections = true;
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
-    extraConfigLua = ''
+    luaConfig = ''
       require('nvim-treesitter.configs').setup {
         context_commentstring = {
             enable = true;
