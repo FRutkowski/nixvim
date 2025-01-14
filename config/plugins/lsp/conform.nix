@@ -108,7 +108,7 @@
             stop_after_first = true;
           };
           python = [
-            "black"
+            "ruff"
             "isort"
           ];
           lua = [ "stylua" ];
