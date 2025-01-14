@@ -9,8 +9,13 @@
     folding = false;
     nixvimInjections = true;
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
+    # context_commentstring = {
+    #   enable = true;
+    #   enable_autocmd = false;
+    # };
   };
 
+  plugins.treesitter-context.enable = true;
   plugins.treesitter-textobjects = {
     enable = false;
     select = {
@@ -27,7 +32,7 @@
         "ai" = "@conditional.outer";
         "il" = "@loop.inner";
         "al" = "@loop.outer";
-        # "at" = "@comment.outer";
+        "at" = "@comment.outer";
       };
     };
     move = {
