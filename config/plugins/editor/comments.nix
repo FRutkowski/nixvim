@@ -5,7 +5,7 @@
       lazyLoad.enable = false;
       settings = {
         toggler = {
-          block = "<C-/>";
+          block = "gcb";
         };
       };
     };
