@@ -9,13 +9,17 @@
     folding = false;
     nixvimInjections = true;
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
-    context_commentstring = {
-      enable = true;
-      enable_autocmd = false;
-    };
+    extraConfigLua = ''
+      require('nvim-treesitter.configs').setup {
+        context_commentstring = {
+            enable = true;
+            enable_autocmd = false;
+          };
+        }
+    '';
   };
 
-  plugins.treesitter-context.enable = true;
+  # plugins.treesitter-context.enable = true;
   plugins.treesitter-textobjects = {
     enable = false;
     select = {
